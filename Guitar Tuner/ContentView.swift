@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var microphoneAccessGranted = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if microphoneAccessGranted {
+                Text("Tuning interphase coming soon!!")
+            } else {
+                Button("Request Microphone Access") {
+                    requestMicrophoneAccess()
+                }
+            }
         }
         .padding()
+    }
+    
+    private func requestMicrophoneAccess() {
+        AVCaptureDevice.requestAccess(for: .audio) { granted in
+            DispatchQueue.main.async {
+                self.microphoneAccessGranted = granted
+            }
+        }
     }
 }
 

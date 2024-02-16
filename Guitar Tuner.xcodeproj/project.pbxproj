@@ -14,6 +14,7 @@
 		A76DF5032B7ECD8D00A5FB22 /* Guitar_TunerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76DF5022B7ECD8D00A5FB22 /* Guitar_TunerTests.swift */; };
 		A76DF50D2B7ECD8D00A5FB22 /* Guitar_TunerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76DF50C2B7ECD8D00A5FB22 /* Guitar_TunerUITests.swift */; };
 		A76DF50F2B7ECD8D00A5FB22 /* Guitar_TunerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76DF50E2B7ECD8D00A5FB22 /* Guitar_TunerUITestsLaunchTests.swift */; };
+		A76DF51F2B7ED25400A5FB22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76DF51C2B7ED22400A5FB22 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		A76DF5082B7ECD8D00A5FB22 /* Guitar TunerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guitar TunerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76DF50C2B7ECD8D00A5FB22 /* Guitar_TunerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar_TunerUITests.swift; sourceTree = "<group>"; };
 		A76DF50E2B7ECD8D00A5FB22 /* Guitar_TunerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar_TunerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A76DF51C2B7ED22400A5FB22 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		A76DF51E2B7ED24200A5FB22 /* Guitar-Tuner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Guitar-Tuner-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76DF51F2B7ED25400A5FB22 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 				A76DF5012B7ECD8D00A5FB22 /* Guitar TunerTests */,
 				A76DF50B2B7ECD8D00A5FB22 /* Guitar TunerUITests */,
 				A76DF4EE2B7ECD8C00A5FB22 /* Products */,
+				A76DF51B2B7ED22400A5FB22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +100,7 @@
 		A76DF4EF2B7ECD8C00A5FB22 /* Guitar Tuner */ = {
 			isa = PBXGroup;
 			children = (
+				A76DF51E2B7ED24200A5FB22 /* Guitar-Tuner-Info.plist */,
 				A76DF4F02B7ECD8C00A5FB22 /* Guitar_TunerApp.swift */,
 				A76DF4F22B7ECD8C00A5FB22 /* ContentView.swift */,
 				A76DF4F42B7ECD8D00A5FB22 /* Assets.xcassets */,
@@ -127,6 +133,14 @@
 				A76DF50E2B7ECD8D00A5FB22 /* Guitar_TunerUITestsLaunchTests.swift */,
 			);
 			path = "Guitar TunerUITests";
+			sourceTree = "<group>";
+		};
+		A76DF51B2B7ED22400A5FB22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76DF51C2B7ED22400A5FB22 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +438,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Guitar-Tuner-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +477,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Guitar-Tuner-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
